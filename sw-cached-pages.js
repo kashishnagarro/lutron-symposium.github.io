@@ -7,7 +7,7 @@ cacheAssets = [
     '/css/style.css'
 ];
 
-// //call install event
+//call install event
 self.addEventListener('install', (e) => {
     console.log("SW: Installed site");
 
@@ -21,11 +21,11 @@ self.addEventListener('install', (e) => {
     );
 });
 
-// // activate event
+// activate event
 self.addEventListener('activate', (e) => {
     console.log("SW: Activated site");
 
-//     //remove unwanted caches
+    //remove unwanted caches
     e.waitUntil(
         caches.keys().then(cacheName => {
             return Promise.all(
