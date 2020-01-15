@@ -1,4 +1,4 @@
-const currentCacheName = 'v1';
+const currentCacheName = 'v2';
 
 //call install event
 self.addEventListener('install', (e) => {
